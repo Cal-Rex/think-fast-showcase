@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Fast! Plato Power!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Honk&display=swap');
+
+        * {
+            font-size: 1.1rem;
+        }
+
+        #body {
+            background-image: url('https://res.cloudinary.com/dmjetjfza/image/upload/v1758990493/think-fast-bg_nk3j1f.webp');
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .nav-heading {
+            font-family: 'Honk', cursive;
+            font-size: 3rem;
+            /* background-image: linear-gradient(pink, red);
+            color: transparent;
+            background-clip: text; */
+            text-align: center
+        }
+
+        #intro {
+            transition: all 0.5s ease;
+        }
+
+        .row-b {
+            --bs-gutter-x: 0rem;
+        }
+
+
+
+        .box {
+            padding: 5% 10%;
+            background-color: #1a1c25;
+            color: #d8d9f3;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .qbox {
+            min-height: 50vh;
+            height: fit-content;
+        }
+
+        .box p {
+            color: #d8d9f3;
+            text-align: center;
+        }
+
+        .tf-row {
+            height: 100%;
+        }
+
+        .tf-col {
+            height: 80%;
+        }
+
+        .tf-btn {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            align-content: revert-layer;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tf-btn p {
+            font-size: 3rem;
+        }
+
+        .question-container {
+            height: 50vh;
+        }
+
+        .on-ur-marks {
+            font-family: 'Honk', cursive;
+            font-size: 10rem;
+            text-align: center;
+            /* background-image: linear-gradient(pink, red);
+            color: transparent;
+            background-clip: text; */
+            display: none;
+        }
+
+        #score {
+            font-family: 'Honk', cursive;
+            text-align: center;
+            background-image: linear-gradient(pink, red);
+            color: transparent;
+            background-clip: text
+        }
+
+        #exp-info {
+            font-weight: bold;
+            color: red;
+            cursor: pointer;
+        }
+
+        #exp-info:hover {
+            color: pink;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            #body {
+                background-image: url('https://res.cloudinary.com/dmjetjfza/image/upload/v1758990493/think-fast-bg_nk3j1f.webp');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="test-info" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Experiment Information
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Introduction</span></strong>
+                                    </p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">The aim
+                                            of the study is to clarify if individuals identify objects or entities
+                                            related to a category at a faster rate if they are typical examples of this
+                                            category, as opposed to atypical examples. The study is being conducted by
+                                            Andy Gibb at Glasgow Caledonian University. The study is being carried out
+                                            by Andy Gibb as a part of an educational course for the award of BSc (hons)
+                                            Applied Psychology.</span></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Before
+                                            you decide whether or not to take part, it is important for you to
+                                            understand what participation in the study will involve. Please take time to
+                                            read the following information carefully and discuss it with others if you
+                                            wish. Please contact us at the address below if you would like more
+                                            information.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Why
+                                                is this study important?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">This is
+                                            an important study because it will help undergraduate students obtain a much
+                                            better understanding of how research within the field of applied psychology
+                                            is conducted. Conducting this study aims to foster skills to apply research
+                                            methods to verify psychological theory, this in turn will help understanding
+                                            of reading and appraising other research conducted in the field of
+                                            psychology.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                will I have to do if I take part?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">If you
+                                            are interested in taking part, you will be invited to give consent. Giving
+                                            consent will involve signing your initials in the Think Fast web
+                                            application, just before you take the quiz/take part in the study. You will
+                                            receive a copy of the signed consent form following your
+                                            participation.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Once
+                                            consent has been completed the application will begin a countdown before
+                                            displaying a series of statements, one after another. You will be required
+                                            to simply read the statement and determine if the statement is true or
+                                            false. Statements do not necessarily have a right or wrong answer. But they
+                                            are straightforward statements which are easy to understand. An example
+                                            statement would be something like "The Sky is blue." This task can be
+                                            completed on your own smartphone or touchscreen device. We also encourage
+                                            you to not overthink any of the answers and invite you to compete with other
+                                            participants to try and achieve the quickest time. Upon completing all of
+                                            your assigned questions you will get to see the length of time it took you
+                                            to answer the questions. Your results will automatically be collated and
+                                            sent to the GCU Email address of Andy Gibb, who will inform you of your
+                                            place on the leaderboard.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">During
+                                            the presentaton of findings, the winner with the shortest time will be
+                                            awarded with a modest prize.</span></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Do I
+                                                have to take part?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">No. You
+                                            decide whether you want to take part. You can stop taking part in the study
+                                            at any time, without giving a reason. Withdrawing from the study will not
+                                            affect your medical care or legal rights. Any submissions to the Web
+                                            application will be permanently deleted.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What are
+                                            the possible risks with taking part?</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">All
+                                            studies involve some level of risk and inconvenience. The possible risks
+                                            involved with this study are your initials being leaked to a 3rd party,
+                                            should the GCU email server security ever be compromised. Physical risks
+                                            entirely fall to the device in which the web application is viewed upon. As
+                                            this is a web application available via an HTTPS URL. You are required to
+                                            provide your own device security.</span></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                are the possible benefits of taking part?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">We
+                                            can&rsquo;t promise the study will help you personally. However, the results
+                                            should help our understanding of the theories of Plato's forms. This, in
+                                            turn, is expected to be beneficial to the class in understanding Plato's
+                                            role in his contribution to science.</span></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                happens when the study stops?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Written
+                                            reports of the study findings will be available from the 20th October 2025.
+                                            However, a copy of the report can be requested from Andy Gibb.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                if there is a problem?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">If you
+                                            are concerned about your participation in the study and would like to speak
+                                            with someone out with the study team, please contact Lesley Anne Macrae via
+                                            email: <a href="mailto:L.MacRae@gcu.ac.uk">L.MacRae@gcu.ac.uk</a>.</span>
+                                    </p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                will happen to the information given during the study?</span></strong>
+                                    </p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">This
+                                            section will explain what happens to the information you given during the
+                                            study.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">No
+                                            personal data will be collected during this study. Response data from the
+                                            SVT will be collated to look for common themes between response times.
+                                            Anonymisation will occur purely on the basis that the only information that
+                                            we collect from you will be your response times and your initials. No other
+                                            information will be taken. The aforementioned information will only be
+                                            accessed by the research group (Andy Gibb, Kai Gray, Heather Greene, Jenna
+                                            Elliot) in the form of automated email. This information will be secured on
+                                            the Glasgow Caledonian University email server which is password protected
+                                            with Multi-factor Authentication. Data analysis will be conducted by Andy
+                                            Gibb. Data will be destroyed (deleted from the email server) following
+                                            presentation of findings after 20th October 2025</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">This
+                                            study complies with the Data Protection Act (2018) and the General Data
+                                            Protection Regulation (GDPR).&nbsp;</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">The data
+                                            controller is Glasgow Caledonian University. Information is being processed
+                                            on the basis of Article 6(1)(e) of the General Data Protection Regulation
+                                            and to perform a task carried out in the public interest.</span></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Enquiries
+                                            specifically relating to data protection should be made to the
+                                            University&rsquo;s Data Protection Officer (DPO). The DPO can be contacted
+                                            by email: <a
+                                                href="mailto:dataprotection@gcu.ac.uk">dataprotection@gcu.ac.uk</a>. If
+                                            you are unhappy with the response from the University, you have the right to
+                                            lodge a complaint with the Information Commissioner&rsquo;s Office (ICO).
+                                            The ICO can be contacted by email: <a
+                                                href="mailto:casework@ico.org.uk">casework@ico.org.uk</a>.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">GDPR
+                                            also gives study participants the right to ask for their personal data to be
+                                            erased. If you would like us to stop using your personal data, then you can
+                                            contact Andy Gibb (<a
+                                                href="mailto:agibb14@caledonian.ac.uk">agibb14@caledonian.ac.uk</a>) and
+                                            ask for your personal data to be erased. However, it will only be possible
+                                            to erase data that has not been anonymised and/or published. Further
+                                            information about your rights can be found at:
+                                            https://www.gcu.ac.uk/dataprotection/rights/</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Who
+                                                is organising and funding the study?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">This
+                                            study is being organised by Andy Gibb and Heather Greene and funded by Andy
+                                            Gibb.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                will happen to the results of the study?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">The
+                                            study results will be available to a range of people including e.g. health
+                                            professionals, researchers, and the public. It will not be possible to
+                                            identify any individual participant from these reports or publications. Some
+                                            studies may seek permission to share anonymous data with researchers
+                                            conducting separate ethically approved studies, but this will need to be
+                                            added to the consent form and included in the consent process for this
+                                            study.</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Who
+                                                has reviewed the study?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">All
+                                            studies involving human participants carried out at Glasgow Caledonian
+                                            University are reviewed by an ethics committee. The role of the ethics
+                                            committee is the protect the safety, rights, wellbeing, and dignity of study
+                                            participants. This study was reviewed by the School of Health and Life
+                                            Sciences Research Ethics Committee and given ethical approval on [date]
+                                            under the following approval code: [approval code].</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">What
+                                                happens next?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">If you
+                                            are interested in participating and would like to know more then get stuck
+                                            in!</span></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">&nbsp;</span>
+                                    </p>
+                                    <p class="MsoNormal"><strong><span
+                                                style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">How
+                                                do I make contact with the study team?</span></strong></p>
+                                    <p class="MsoNormal"><span
+                                            style="mso-ascii-font-family: Aptos; mso-hansi-font-family: Aptos;">Andy
+                                            Gibb<br>agibb14@caledonian.ac.uk</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Consent Information
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <h4><strong>By adding my initials to the box before starting the quiz, i am
+                                            confirming that i have signed and consented to the following:</strong></h4>
+                                    <p>
+                                    <ol>
+                                        <li>
+                                            I confirm I have read and understood the information sheet for the above
+                                            study, had the opportunity to ask questions, and had these questions
+                                            answered satisfactorily.
+                                        </li>
+                                        <li>
+                                            I understand my participation is voluntary and I am free to withdraw at any
+                                            time without giving a reason and without my medical care and/or legal rights
+                                            being affected.
+                                        </li>
+                                        <li>
+                                            I agree to take part in the above study.
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <form>
+                                        <input type="text" id="initials" placeholder="initials...">
+                                    </form>
+                                    <p><span class="btn btn-outline-dark" id="ok-cool"
+                                            style="font-size: 2rem; padding: 20px;">Ok neat</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="test">
+        <div class="container">
+            <div class="row">
+                <form id="contact-form" style="display: none;">
+                    <!-- To simplify the tutorial, the value is static. -->
+
+                    <label>Question 1 time</label>
+                    <input id="q1-time" type="text" name="question1_time">
+                    <label>Question 1 answer</label>
+                    <input id="q1-answer" type="text" name="question1_ans">
+                    <label>Question 2 time</label>
+                    <input id="q2-time" type="text" name="question2_time">
+                    <label>Question 2 answer</label>
+                    <input id="q2-answer" type="text" name="question2_ans">
+                    <label>Question 3 time</label>
+                    <input id="q3-time" type="text" name="question3_time">
+                    <label>Question 3 answer</label>
+                    <input id="q3-answer" type="text" name="question3_ans">
+                    <label>Question 4 time</label>
+                    <input id="q4-time" type="text" name="question4_time">
+                    <label>Question 4 answer</label>
+                    <input id="q4-answer" type="text" name="question4_ans">
+                    <label>Question 5 time</label>
+                    <input id="q5-time" type="text" name="question5_time">
+                    <label>Question 5 answer</label>
+                    <input id="q5-answer" type="text" name="question5_ans">
+                    <label>Question 6 time</label>
+                    <input id="q6-time" type="text" name="question6_time">
+                    <label>Question 6 answer</label>
+                    <input id="q6-answer" type="text" name="question6_ans">
+                    <label>Question 7 time</label>
+                    <input id="q7-time" type="text" name="question7_time">
+                    <label>Question 7 answer</label>
+                    <input id="q7-answer" type="text" name="question7_ans">
+                    <label>Question 8 time</label>
+                    <input id="q8-time" type="text" name="question8_time">
+                    <label>Question 8 answer</label>
+                    <input id="q8-answer" type="text" name="question8_ans">
+                    <label>Question 9 time</label>
+                    <input id="q9-time" type="text" name="question9_time">
+                    <label>Question 9 answer</label>
+                    <input id="q9-answer" type="text" name="question9_ans">
+                    <label>Question 10 time</label>
+                    <input id="q10-time" type="text" name="question10_time">
+                    <label>Question 10 answer</label>
+                    <input id="q10-answer" type="text" name="question10_ans">
+                    <label>Question 11 time</label>
+                    <input id="q11-time" type="text" name="question11_time">
+                    <label>Question 11 answer</label>
+                    <input id="q11-answer" type="text" name="question11_ans">
+                    <label>Question 12 time</label>
+                    <input id="q12-time" type="text" name="question12_time">
+                    <label>Question 12 answer</label>
+                    <input id="q12-answer" type="text" name="question12_ans">
+                    <!-- <label>Question 13 time</label>
+                <input id="q13-time" type="text" name="question13_time">
+                <label>Question 13 answer</label>
+                <input id="q13-answer" type="text" name="question13_ans">
+                <label>Question 14 time</label>
+                <input id="q14-time" type="text" name="question14_time">
+                <label>Question 14 answer</label>
+                <input id="q14-answer" type="text" name="question14_ans">
+                <label>Question 15 time</label>
+                <input id="q15-time" type="text" name="question15_time">
+                <label>Question 15 answer</label>
+                <input id="q15-answer" type="text" name="question15_ans"> -->
+                    <label>Typical Time</label>
+                    <input id="typical" type="text" name="typical_time">
+                    <label>Atypical Time</label>
+                    <input id="atypical" type="text" name="atypical_time">
+                    <!-- <label>False Time</label>
+                <input id="false" type="text" name="false_time"> -->
+                    <label>Final Time</label>
+                    <input id="final-time" type="text" name="final_time">
+                    <label>average typical time</label>
+                    <input id="avg-typical" type="text" name="avg_typical_time">
+                    <label>average atypical time</label>
+                    <input id="avg-atypical" type="text" name="avg_atypical_time">
+                    <!-- <label>average false time</label> -->
+                    <!-- <input id="avg-false" type="text" name="avg_false_time"> -->
+                    <label>Nickname</label>
+                    <input type="text" name="signature" id="nickname">
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="nav-heading" style="padding: 10px 0px;">
+                        Think Fast
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="intro" style="display: none;">
+                <div class="col box">
+                    <p style="font-size: 1.2rem;">How <strong>FAST</strong> can you guess the correct answer to these
+                        true
+                        or false questions?</p>
+                    <p style="font-size: 1.2rem;">Person with the shortest time gets a PRIZE.</p>
+                    <p style="font-size: 1.2rem;"><strong>Be careful</strong> though, as each wrong answer will give you
+                        a 2
+                        second penalty!</p>
+                    <br>
+
+                    <p>Enter your Initials to get started:</p>
+                    <p><em>By signing the field below with your initials you are confirming that you have read the <span
+                                id="exp-info">EXPERIMENT INFORMATION and the CONSENT INFORMATION</span>, and that you
+                            understand and wilfully agree to take part in this experiment:</em></p>
+                    <form>
+                        <label style="display: none;">Nickname</label>
+                        <input type="text" id="nickname-entry">
+                    </form>
+                    <p><span class="btn btn-outline-light" id="timer-control1"
+                            style="font-size: 2rem; padding: 20px;">Start</span></p>
+                </div>
+            </div>
+            <div class="row" id="countdown" style="display: none;">
+                <div class="col box" style="height: 50vh">
+                    <h1 class="on-ur-marks" id="3">3</h1>
+                    <h1 class="on-ur-marks" id="2">2</h1>
+                    <h1 class="on-ur-marks" id="1">1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row box row-b" id="answers" style="display: none;">
+            <div class="col-12">
+                <h3 style="color: #ffffff; font-family: Honk;" id="nicky-name"></h3>
+                <h3 style="color: #ffffff;">Your Score!</h3>
+                <h2 style="color: #ffffff;" id="score">seconds</h2>
+                <p style="color: #ffffff;"><strong>Thanks for trying out the demo of this little program. Sadly, there's
+                        no prize now, your attempt will not be forwarded or stored anywhere. HOWEVER, here are your
+                        results!</strong></span></p>
+            </div>
+            <!-- comment out these final divs in production -->
+            <div class="col-12">
+                <p style="font-weight: 700;">Typical Time</p>
+                <p>You took <span id="typical-time"></span> seconds (on average) to identify if something was
+                    <em>typical</em> of your ideal version of a plant, drink or fish.</p>
+            </div>
+            <div class="col-12">
+                <p style="font-weight: 700;">Atypical Time</p>
+                <p>You took <span id="atypical-time"></span> seconds (on average) to identify if something was
+                    <em>atypical</em> of your ideal version of a plant, drink or fish.</p>
+            </div>
+            <div class="col-12">
+                <p style="text-decoration: underline;">You can check out the poster that breaks down the full experiment by clicking the link below</p>
+                <p style="font-weight: 700;"><a href="/poster.html" target="_blank">Show me the research!</a></p>
+            </div>
+            <!-- comment out these final divs in production -->
+        </div>
+        <div class="row row-b" id="questions" style="display: none;">
+            <div id="finished" style="display: none;">
+                <p>FINISHED!</p>
+            </div>
+            <div class="col box qbox">
+
+                <div class="container-fluid question-container" id="q1" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>A daffodil is a plant</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q1-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q1-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q2" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Broccoli is a plant</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q2-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q2-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q3" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Sunflowers are plants</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q3-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q3-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q4" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Carrots are plants</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q4-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q4-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q5" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>A goldfish is a fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q5-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q5-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q6" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>An eel is a fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q6-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q6-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q7" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Sharks are fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q7-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q7-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q8" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Jellyfish are fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q8-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q8-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q9" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Cola is a drink</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q9-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q9-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q10" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Yoghurt is a drink</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q10-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q10-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q11" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Milk is a drink</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q11-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q11-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q12" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Soup is a drink</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q12-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q12-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q13" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Sunflowers are fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q13-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q13-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q14" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Broccoli is a fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q14-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q14-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid question-container" id="q15" style="display: none;">
+                    <div class="row tf-row">
+                        <div class="col-12">
+                            <p>Carrots are fish</p>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-info" id="q15-t">
+                                <p>True</p>
+                            </div>
+                        </div>
+                        <div class="col-6 tf-col">
+                            <div class="tf-btn btn btn-outline-danger" id="q15-f">
+                                <p>False</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- styling js -->
+    <script type="text/javascript">
+        window.onLoad = setTimeout(function () {
+            document.getElementById("intro").style.display = "block";
+            document.getElementById("intro").style.animation = "fade-in 1s ease-in-out"
+        }, 1000)
+
+
+    </script>
+    <!-- Javascript -->
+    <script type="text/javascript">
+        let timerControl = document.getElementById("timer-control1");
+        let q1True = document.getElementById("q1-t");
+        let q1False = document.getElementById("q1-f");
+        let q2True = document.getElementById("q2-t");
+        let q2False = document.getElementById("q2-f");
+        let q3True = document.getElementById("q3-t");
+        let q3False = document.getElementById("q3-f");
+        let q4True = document.getElementById("q4-t");
+        let q4False = document.getElementById("q4-f");
+        let q5True = document.getElementById("q5-t");
+        let q5False = document.getElementById("q5-f");
+        let q6True = document.getElementById("q6-t");
+        let q6False = document.getElementById("q6-f");
+        let q7True = document.getElementById("q7-t");
+        let q7False = document.getElementById("q7-f");
+        let q8True = document.getElementById("q8-t");
+        let q8False = document.getElementById("q8-f");
+        let q9True = document.getElementById("q9-t");
+        let q9False = document.getElementById("q9-f");
+        let q10True = document.getElementById("q10-t");
+        let q10False = document.getElementById("q10-f");
+        let q11True = document.getElementById("q11-t");
+        let q11False = document.getElementById("q11-f");
+        let q12True = document.getElementById("q12-t");
+        let q12False = document.getElementById("q12-f");
+        let q13True = document.getElementById("q13-t");
+        let q13False = document.getElementById("q13-f");
+        let q14True = document.getElementById("q14-t");
+        let q14False = document.getElementById("q14-f");
+        let q15True = document.getElementById("q15-t");
+        let q15False = document.getElementById("q15-f");
+        let nicknameEntry = document.getElementById("nickname-entry").value;
+
+
+        let qStart;
+        let qEnd;
+        let q1Time;
+        let q1Ans;
+        let q2Time;
+        let q2Ans;
+        let q3Time;
+        let q3Ans;
+        let q4Time;
+        let q4Ans;
+        let q5Time;
+        let q5Ans;
+        let q6Time;
+        let q6Ans;
+        let q7Time;
+        let q7Ans;
+        let q8Time;
+        let q8Ans;
+        let q9Time;
+        let q9Ans;
+        let q10Time;
+        let q10Ans;
+        let q11Time;
+        let q11Ans;
+        let q12Time;
+        let q12Ans;
+        let q13Time = 0;
+        let q13Ans0;
+        let q14Time = 0;
+        let q14Ans;
+        let q15Time = 0;
+        let q15Ans;
+
+        let nickname;
+        let typicalTimes = [q1Time, q3Time, q5Time, q7Time, q9Time, q11Time];
+        let atypicalTimes = [q2Time, q4Time, q6Time, q8Time, q10Time, q12Time];
+        // let falseTimes = [q9Time, q10Time, q11Time, q12Time, q13Time, q14Time, q15Time]
+        let answers = [
+            q1Ans, q2Ans, q3Ans, q4Ans, q5Ans, q6Ans, q7Ans,
+            q8Ans, q9Ans, q10Ans, q11Ans, q12Ans,
+        ];
+        let finalTypical;
+        let finalAtypical;
+        // let finalFalse;
+        let finalAnswers;
+        let avgTypical;
+        let avgAtypical;
+        // let avgFalse;
+        // log questions taken here to avoid duplicates, once length if array is 8, conclude
+        let dupeChecker = [];
+        var lastQ = "";
+
+        function roll() {
+            let diceRoll = Math.floor(Math.random() * 12) + 1;
+            return diceRoll;
+        };
+
+        function getRandomInt() {
+            if (dupeChecker.length > 11) {
+                d8 = 20;
+                console.log("numbers rolled this session: ", dupeChecker);
+                return d8;
+            } else {
+                if (dupeChecker.length < 1) {
+                    let d8 = roll();
+                    console.log(d8);
+                    document.getElementById("intro").style.display = "none";
+                    document.getElementById("questions").style.display = "block";
+                    if (dupeChecker.includes(d8)) {
+                        // console.log("duplicate in array (", d8, ")");
+                        // console.log("dupeChecker on TRUE: ", dupeChecker);
+                        return getRandomInt();
+                    } else {
+                        // console.log("first instance of", d8);
+                        // console.log("pushing d8 to dupeChecker...");
+                        dupeChecker.push(d8);
+                        // console.log("dupeChecker: ", dupeChecker);
+                        lastQ = "q" + d8;
+                    }
+                    return d8;
+                } else {
+                    document.getElementById(lastQ).style.display = "none";
+                    let d8 = roll();
+                    console.log(d8);
+                    if (dupeChecker.includes(d8)) {
+                        // console.log("duplicate in array (", d8, ")");
+                        // console.log("dupeChecker on TRUE: ", dupeChecker);
+                        return getRandomInt();
+                    } else {
+                        // console.log("first instance of", d8);
+                        // console.log("pushing d8 to dupeChecker...");
+                        dupeChecker.push(d8);
+                        // console.log("dupeChecker: ", dupeChecker);
+                        lastQ = "q" + d8;
+                    }
+                    return d8;
+                }
+            }
+        };
+
+        function sendForm() {
+            let contactForm = document.getElementById("contact-form");
+        };
+
+        function genQuestion() {
+            console.log("CLICK");
+            if (dupeChecker.length < 1) {
+                console.log("first question");
+                document.getElementById("intro").style.display = "none";
+                document.getElementById("countdown").style.display = "block";
+                document.getElementById("countdown").style.animation = "fade-in 0.5s ease-in-out";
+                setTimeout(function () {
+                    document.getElementById("3").style.display = "block";
+                    document.getElementById("3").style.animation = "fade-in 0.5s ease-in-out";
+                    setTimeout(function () {
+                        document.getElementById("3").style.display = "none";
+                        document.getElementById("2").style.display = "block";
+                        document.getElementById("2").style.animation = "fade-in 0.5s ease-in-out";
+                        setTimeout(function () {
+                            document.getElementById("2").style.display = "none";
+                            document.getElementById("1").style.display = "block";
+                            document.getElementById("1").style.animation = "fade-in 0.5s ease-in-out";
+                            setTimeout(function () {
+                                document.getElementById("countdown").style.display = "none";
+                                let q = getRandomInt();
+                                if (q === 20) {
+                                    document.getElementById("finished").style.display = "block";
+                                    document.getElementById("timer-control1").style.display = "none";
+                                    document.getElementById("questions").style.display = "none";
+                                    finalTypical = q1Time + q3Time + q5Time + q7Time;
+                                    finalAtypical = q2Time + q4Time + q6Time + q8Time;
+                                    finalAnswers = q1Time + q2Time + q3Time + q4Time + q5Time + q6Time + q7Time + q8Time + q9Time + q10Time + q11Time + q12Time + q13Time + q14Time + q15Time;
+                                    // finalFalse = q9Time + q10Time + q11Time + q12Time + q13Time + q14Time + q15Time;
+                                    document.getElementById("typical-time").innerHTML = finalTypical;
+                                    document.getElementById("atypical-time").innerHTML = finalAtypical;
+                                    document.getElementById("answers").style.display = "block";
+                                    // sendForm();
+                                    // document.getElementById("contact-form").style.display = "block";
+                                    return;
+                                } else {
+                                    let qSelect = "q" + q;
+                                    timerControl.innerHTML = "Stop";
+                                    console.log(qStart);
+                                    console.log("qSelect: ", qSelect);
+                                    document.getElementById(qSelect).style.display = "block";
+                                    qStart = Date.now();
+                                }
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            } else {
+                let q = getRandomInt();
+                if (q === 20) {
+                    document.getElementById("finished").style.display = "block";
+                    document.getElementById("timer-control1").style.display = "none";
+                    document.getElementById("questions").style.display = "none";
+                    finalTypical = q1Time + q3Time + q5Time + q7Time + q9Time + q11Time;
+                    finalAtypical = q2Time + q4Time + q6Time + q8Time + q10Time + q12Time;
+                    finalAnswers = q1Time + q2Time + q3Time + q4Time + q5Time + q6Time + q7Time + q8Time + q9Time + q10Time + q11Time + q12Time;
+                    // finalFalse = q9Time + q10Time + q11Time + q12Time + q13Time + q14Time + q15Time;
+                    console.log(finalAnswers);
+                    avgTypical = (q1Time + q3Time + q5Time + q7Time + q9Time + q11Time) / 6;
+                    avgAtypical = (q2Time + q4Time + q6Time + q8Time + q10Time + q12Time) / 6;
+                    // avgFalse = (q9Time + q10Time + q11Time + q12Time + q13Time + q14Time + q15Time) / 7;
+                    // Comment out in production
+                    document.getElementById("typical-time").innerHTML = finalTypical;
+                    document.getElementById("atypical-time").innerHTML = finalAtypical;
+                    // Comment out in production
+                    document.getElementById("nicky-name").innerText = nickname;
+                    document.getElementById("score").innerText = finalAnswers + " Seconds";
+                    document.getElementById("final-time").value = finalAnswers;
+                    document.getElementById("typical").value = finalTypical;
+                    document.getElementById("atypical").value = finalAtypical;
+                    // document.getElementById("false").value = finalFalse;
+                    document.getElementById("avg-typical").value = avgTypical;
+                    document.getElementById("avg-atypical").value = avgAtypical;
+                    // document.getElementById("avg-false").value = avgFalse;
+                    document.getElementById("answers").style.display = "block";
+                    sendForm();
+                    // document.getElementById("contact-form").style.display = "block";
+                    return;
+                } else {
+                    let qSelect = "q" + q;
+                    timerControl.innerHTML = "Stop";
+                    console.log(qStart);
+                    console.log("qSelect: ", qSelect);
+                    document.getElementById(qSelect).style.display = "block";
+                    qStart = Date.now();
+                }
+            }
+
+        };
+
+        function question1(answer) {
+            qEnd = Date.now();
+            q1Time = (qEnd - qStart) / 1000;
+            q1Ans = answer;
+            document.getElementById("q1-time").value = q1Time;
+            document.getElementById("q1-answer").value = q1Ans;
+            genQuestion();
+        };
+
+        function question2(answer) {
+            qEnd = Date.now();
+            q2Time = (qEnd - qStart) / 1000;
+            q2Ans = answer;
+            document.getElementById("q2-time").value = q2Time;
+            document.getElementById("q2-answer").value = q2Ans;
+            genQuestion();
+        };
+
+        function question3(answer) {
+            qEnd = Date.now();
+            q3Time = (qEnd - qStart) / 1000;
+            q3Ans = answer;
+            document.getElementById("q3-time").value = q3Time;
+            document.getElementById("q3-answer").value = q3Ans;
+            genQuestion();
+        };
+
+        function question4(answer) {
+            qEnd = Date.now();
+            q4Time = (qEnd - qStart) / 1000;
+            q4Ans = answer;
+            document.getElementById("q4-time").value = q4Time;
+            document.getElementById("q4-answer").value = q4Ans;
+            genQuestion();
+        };
+
+        function question5(answer) {
+            qEnd = Date.now();
+            q5Time = (qEnd - qStart) / 1000;
+            q5Ans = answer;
+            document.getElementById("q5-time").value = q5Time;
+            document.getElementById("q5-answer").value = q5Ans;
+            genQuestion();
+        };
+
+        function question6(answer) {
+            qEnd = Date.now();
+            q6Time = (qEnd - qStart) / 1000;
+            q6Ans = answer;
+            document.getElementById("q6-time").value = q6Time;
+            document.getElementById("q6-answer").value = q6Ans;
+            genQuestion();
+        };
+
+        function question7(answer) {
+            qEnd = Date.now();
+            q7Time = (qEnd - qStart) / 1000;
+            q7Ans = answer;
+            document.getElementById("q7-time").value = q7Time;
+            document.getElementById("q7-answer").value = q7Ans;
+            genQuestion();
+        };
+
+        function question8(answer) {
+            qEnd = Date.now();
+            q8Time = (qEnd - qStart) / 1000;
+            q8Ans = answer;
+            document.getElementById("q8-time").value = q8Time;
+            document.getElementById("q8-answer").value = q8Ans;
+            genQuestion();
+        };
+
+        function question9(answer) {
+            qEnd = Date.now();
+            q9Time = (qEnd - qStart) / 1000;
+            q9Ans = answer;
+            document.getElementById("q9-time").value = q9Time;
+            document.getElementById("q9-answer").value = q9Ans;
+            genQuestion();
+        };
+
+        function question10(answer) {
+            qEnd = Date.now();
+            q10Time = (qEnd - qStart) / 1000;
+            q10Ans = answer;
+            document.getElementById("q10-time").value = q10Time;
+            document.getElementById("q10-answer").value = q10Ans;
+            genQuestion();
+        };
+
+        function question11(answer) {
+            qEnd = Date.now();
+            q11Time = (qEnd - qStart) / 1000;
+            q11Ans = answer;
+            document.getElementById("q11-time").value = q11Time;
+            document.getElementById("q11-answer").value = q11Ans;
+            genQuestion();
+        };
+
+        function question12(answer) {
+            qEnd = Date.now();
+            q12Time = (qEnd - qStart) / 1000;
+            q12Ans = answer;
+            document.getElementById("q12-time").value = q12Time;
+            document.getElementById("q12-answer").value = q12Ans;
+            genQuestion();
+        };
+
+        function question13(answer) {
+            qEnd = Date.now();
+            q13Time = (qEnd - qStart) / 1000;
+            q13Ans = answer;
+            document.getElementById("q13-time").value = q13Time;
+            document.getElementById("q13-answer").value = q13Ans;
+            genQuestion();
+        };
+
+        function question14(answer) {
+            qEnd = Date.now();
+            q14Time = (qEnd - qStart) / 1000;
+            q14Ans = answer;
+            document.getElementById("q14-time").value = q14Time;
+            document.getElementById("q14-answer").value = q14Ans;
+            genQuestion();
+        };
+
+        function question15(answer) {
+            qEnd = Date.now();
+            q15Time = (qEnd - qStart) / 1000;
+            q15Ans = answer;
+            document.getElementById("q15-time").value = q15Time;
+            document.getElementById("q15-answer").value = q15Ans;
+            genQuestion();
+        };
+
+
+        document.getElementById("exp-info").addEventListener('click', function () {
+            document.getElementById("test-info").style.display = "block";
+            document.getElementById("test").style.display = "none";
+        });
+        document.getElementById("ok-cool").addEventListener('click', function () {
+            document.getElementById("test-info").style.display = "none";
+            document.getElementById("test").style.display = "block";
+            document.getElementById("nickname-entry").value = document.getElementById("initials").value;
+        });
+        timerControl.addEventListener('click', function () {
+            let nicky = document.getElementById("nickname-entry").value;
+            if (nicky.length < 1) {
+                alert("Please make sure you agree with the experiment and consent information and add your initials before you start!");
+            } else {
+                document.getElementById("nickname").value = nicky;
+                nickname = nicky;
+                console.log(document.getElementById("nickname").value);
+                genQuestion();
+            }
+        });
+        q1True.addEventListener('click', function () { question1("true") });
+        q1False.addEventListener('click', function () { question1("false") });
+        q2True.addEventListener('click', function () { question2("true") });
+        q2False.addEventListener('click', function () { question2("false") });
+        q3True.addEventListener('click', function () { question3("true") });
+        q3False.addEventListener('click', function () { question3("false") });
+        q4True.addEventListener('click', function () { question4("true") });
+        q4False.addEventListener('click', function () { question4("false") });
+        q5True.addEventListener('click', function () { question5("true") });
+        q5False.addEventListener('click', function () { question5("false") });
+        q6True.addEventListener('click', function () { question6("true") });
+        q6False.addEventListener('click', function () { question6("false") });
+        q7True.addEventListener('click', function () { question7("true") });
+        q7False.addEventListener('click', function () { question7("false") });
+        q8True.addEventListener('click', function () { question8("true") });
+        q8False.addEventListener('click', function () { question8("false") });
+        q9True.addEventListener('click', function () { question9("true") });
+        q9False.addEventListener('click', function () { question9("false") });
+        q10True.addEventListener('click', function () { question10("true") });
+        q10False.addEventListener('click', function () { question10("false") });
+        q11True.addEventListener('click', function () { question11("true") });
+        q11False.addEventListener('click', function () { question11("false") });
+        q12True.addEventListener('click', function () { question12("true") });
+        q12False.addEventListener('click', function () { question12("false") });
+        q13True.addEventListener('click', function () { question13("true") });
+        q13False.addEventListener('click', function () { question13("false") });
+        q14True.addEventListener('click', function () { question14("true") });
+        q14False.addEventListener('click', function () { question14("false") });
+        q15True.addEventListener('click', function () { question15("true") });
+        q15False.addEventListener('click', function () { question15("false") });
+    </script>
+
+</body>
+
+</html>
