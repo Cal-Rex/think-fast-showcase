@@ -544,7 +544,7 @@
                     <p><em>By signing the field below with your initials you are confirming that you have read the <span
                                 id="exp-info">EXPERIMENT INFORMATION and the CONSENT INFORMATION</span>, and that you
                             understand and wilfully agree to take part in this experiment:</em></p>
-                    <form>
+                    <form id="nicky-form">
                         <label style="display: none;">Nickname</label>
                         <input type="text" id="nickname-entry">
                     </form>
@@ -573,16 +573,20 @@
             <div class="col-12">
                 <p style="font-weight: 700;">Typical Time</p>
                 <p>You took <span id="typical-time"></span> seconds (on average) to identify if something was
-                    <em>typical</em> of your ideal version of a plant, drink or fish.</p>
+                    <em>typical</em> of your ideal version of a plant, drink or fish.
+                </p>
             </div>
             <div class="col-12">
                 <p style="font-weight: 700;">Atypical Time</p>
                 <p>You took <span id="atypical-time"></span> seconds (on average) to identify if something was
-                    <em>atypical</em> of your ideal version of a plant, drink or fish.</p>
+                    <em>atypical</em> of your ideal version of a plant, drink or fish.
+                </p>
             </div>
             <div class="col-12">
-                <p style="text-decoration: underline;">You can check out the poster that breaks down the full experiment by clicking the link below</p>
-                <p style="font-weight: 700;"><a href="https://cal-rex.github.io/think-fast-showcase/plato-power-pdf.pdf" target="_blank">Show me the research!</a></p>
+                <p style="text-decoration: underline;">You can check out the poster that breaks down the full experiment
+                    by clicking the link below</p>
+                <p style="font-weight: 700;"><a href="https://cal-rex.github.io/think-fast-showcase/plato-power-pdf.pdf"
+                        target="_blank">Show me the research!</a></p>
             </div>
             <!-- comment out these final divs in production -->
         </div>
@@ -1292,6 +1296,12 @@
         q14False.addEventListener('click', function () { question14("false") });
         q15True.addEventListener('click', function () { question15("true") });
         q15False.addEventListener('click', function () { question15("false") });
+        document.getElementById('nicky-form').addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                event.preventDefault();
+                timerControl.click();
+            }
+        });
     </script>
 
 </body>
